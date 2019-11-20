@@ -1,18 +1,18 @@
 {{ define "main" }}
 <section id="about" class="card    dark-red-bg   stack">
-    <div class="container   measure--lg">
+    <div class="container   measure--lg   margin-bottom-spacer">
         {{with .Site.GetPage "/about.md" }}{{ .Content }}{{ end }}
     </div>
 </section>
 {{ partial "partners.html" . }}
 <section id="travel-with-us" class="card     dark-red-bg    stack    margin-top-spacer">
-    <div class="container   measure-lg">
+    <div class="container   measure-lg   margin-bottom-spacer">
         {{ with .Site.GetPage "/why-travel-with-us.md" }}{{ .Content }}{{ end }}
     </div>
 </section>
 {{ partial "partners-amon.html" . }}
 <section id="values" class="card dark-red-bg stack   margin-top-spacer">
-    <div class="container   measure--lg">
+    <div class="container   measure--lg   margin-bottom-spacer">
         {{with .Site.GetPage "/values.md" }}{{ .Content }}{{ end }}
     </div>
 </section>
