@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<htmL lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+        <main class="main-background-grad">
+            {{ block "partners" . }}{{ end }}
+            {{ block "partners-amon" . }}{{ end }}
+            {{ block "main" . }}{{ end }}
+        </main>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        {{ partial "footer.html" . }}
+    </body>
+</htmL>

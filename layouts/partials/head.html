@@ -1,0 +1,21 @@
+
+<head>
+    
+    <title>{{ print .Title " | " print .Site.Title }}</title>
+    <meta charset="UTF-8">
+    {{ hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ $sass := resources.Get "css/main.scss" }}
+    {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Oxygen&display=swap" rel="stylesheet">
+ 
+    
+    <meta name="description" content=" Book an educational journey to southern Africa. We offer the chance to connect with everyday people in southern Africa providing cultural exchange and regional touring experiences.">
+    <meta name="robots" content="noindex">
+    
+    
+    <link href="https://smallworldtravelafrica.org" rel="canonical">
+    <script src="https://kit.fontawesome.com/ee98754881.js" crossorigin="anonymous" defer></script>
+    <script src="/assets/js/script.js" defer></script>
+</head>

@@ -1,0 +1,34 @@
+baseURL = "https://free-cord.surge.sh/"
+languageCode = "en-us"
+title = "Small World Travel Africa"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Regional Tours"
+    url = "/regional-tours/"
+    weight = 2
+  [[menu.main]]
+    name = "Cultural Immersion"
+    url = "/cultural-immersion/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 4
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  dateFormat = "Jan 2, 2006"
+  favicon = "/assets/images/anarchy_symbol.png"
+  description = "We are a group of anarchists organizing to promote the spread of anarchist ideas & action in the greater Long Beach Area."
+  images = ["/assets/images/logo.png", "/assets/images/iceoutoflb-banner.jpg", "/assets/images/a-backdrop.png"]
+
+[blackfriday]
+  hrefTargetBlank = true
+  noreferrerLinks = true

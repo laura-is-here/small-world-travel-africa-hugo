@@ -1,0 +1,43 @@
+// Breakpoints
+$bp-small: 48rem; // 768px
+$bp-medium: 64rem; // 1024px
+$bp-large: 85.375rem; // 1366px
+$bp-xlarge: 120rem; // 1920px
+$bp-xxlarge: 160rem; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// Font-Size
+$base-font-size: 1.0rem;
+
+// Line-Height
+$base-line-height: 1.5;
+$header-line-height: 1.15;
+$space-small: 0.75rem;
+$space: 3rem;
+$body-font-family: Oxygen, sans-serif;
+
+$green: #006401; // Green
+  $green-muted: #005801; // Dark Green
+  $green-bright: #408B41; // Bright Green
+  $red: #D40000;
+  $red-muted: #9F0000;
+  $red-darker: #850000;
+  $red-bright: rgba(223,64,64,1);
+  $red-brighter: #FADFDF;
+  $red-bright-transparent: rgb(223,64,64);
+  $yellow: #FFD102;
+  $yellow-muted: #BF9D02;
+  $yellow-bright: #FFDD41;
+  $off-white: #ecf0f1;
+  $off-white-transparent: #ecf0f1cc;
+  $dark: #252525;
+  $dark-transparent: #252525cc;
+  $gray: #555555;
+  $gray-light: #c5c5c5;

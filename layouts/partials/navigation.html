@@ -1,0 +1,21 @@
+<nav role="navigation">
+    <a class="header-link    border-bottom" href="/">
+        Small World Travel Africa
+    </a>
+    <button type="button" id="menu-toggler" aria-expanded="false">
+        <span>Menu</span>
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <div hidden class="nav-content">
+        <ul class="nav-links">
+            {{ range .Site.Menus.main }}
+            <li class="nav-link">
+                <a href="{{ .URL }}" class="nav-link">
+                    {{ .Name | safeHTML }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
