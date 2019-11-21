@@ -10,4 +10,4 @@ Amon is happy to host families or educational groups of up to ten people on cult
                 
 > "Anywhere you go, whatever problems you face, Amon knows the answer."
 
-And if you need a respite from the adventure, [Mary Gokova’s guest house](partners-total-sensitivity) in a quiet Harare suburb is always awaiting your return.
+And if you need a respite from the adventure, [Mary Gokova’s guest house](#partners-total-sensitivity) in a quiet Harare suburb is always awaiting your return.
