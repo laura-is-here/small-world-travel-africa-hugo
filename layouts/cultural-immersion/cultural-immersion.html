@@ -1,10 +1,10 @@
 {{ define "main" }}
-<section class="card    dark-red-bg    stack">
+<section id="about" class="card    dark-red-bg    stack">
     <div class="container   measure--lg   margin-bottom-spacer">
         {{ with .Site.GetPage "/total-sensitivity-intro.md" }}{{ .Content }}{{ end }}
     </div>
 </section>
-<article id="about" class="container   stack   margin-top-spacer">
+<article class="container   stack   margin-top-spacer">
     <div class="grid-container">
         <div class=""> 
             {{ with .Site.GetPage "/total-sensitivity-about.md" }}{{ .Content }}{{ end }}
