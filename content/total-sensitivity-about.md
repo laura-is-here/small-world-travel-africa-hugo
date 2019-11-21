@@ -1,6 +1,6 @@
 # Why Total Sensitivity?
 
-<img src="/assets/images/two_people_closeup.jpg" class="right thumb" width="200px">
+<img src="/assets/images/two_people_closeup.jpg" alt="Total Sensitivity hosts Mary & Jonah Gokova" class="right thumb" width="200px">
 *Total Sensitivity* gives people (individuals and families) an opportunity to meet, interact and learn from each other. Learning and building relations in this global village calls for sensitivity and compassion. Whether you are on a learning expedition, touring or embarking on your assignment to work in Zimbabwe, *Total Sensitivity* provides a friendly guide and tour to ground you in the Zimbabwean reality suggesting principles and approaches applicable to your mission.
 
 ## Services
