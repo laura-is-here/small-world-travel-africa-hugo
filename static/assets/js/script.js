@@ -52,21 +52,3 @@ span.addEventListener('click', () => {
 modal.addEventListener('click', () => {
     modal.style.display = 'none';
 });
-
-/*
-const collapsibles = document.querySelectorAll('.collapsible');
-
-for (i = 0; i < collapsibles.length; i++) {
-    collapsibles[i].addEventListener('click', function() {
-        if (this.classList.contains('active')) {
-            this.innerHTML = "Show";
-            this.classList.toggle('active');
-            this.nextElementSibling.classList.toggle('hide');
-        } else {
-            this.innerHTML = "Hide";
-            this.classList.toggle('active');
-            this.nextElementSibling.classList.toggle('hide');
-        }
-    })
-}
-*/

@@ -16,4 +16,6 @@
 
 The approach involves experience-based learning opportunities designed to meet needs of individuals or groups. We can host groups of up to 12 people at a time.
 
+> We bonded around humor and music,” Ancel Camacho explained, “but also around the conversations we had about culture, gender rights and other issues.”
+
 *Total Sensitivity* makes a professionally administered programme to meet your needs. Should you have free time and want to unwind or see a bit more of Zimbabwe, arrangements can be made to take you there.
