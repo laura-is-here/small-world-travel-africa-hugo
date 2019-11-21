@@ -327,27 +327,32 @@ Styling Utilities //////////////////////////////////////////////////////////////
   border-radius: 50%;
   margin-left: 0.25rem;
 }
+
 .border-bottom {
   border-bottom: 5px solid $green-bright;
 }
+
 .accent-color-main {
   color: $green-bright;
   font-weight: bolder;
 }
+
 .main-background-grad {
   background: 
   linear-gradient(55deg, rgb(197,197,197) 35%, rgba(0,0,0,0) 35%),
   linear-gradient(-25deg, rgba(0,0,0,0) 90%, rgb(197,197,197) 90%);
 }
+
 .wave-background {
   background-image: url("/assets/images/wave.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-size: cover;
 }
+
 .light-bg {
   color: $dark;
   background-color: $off-white;
 }
+
 .dark-red-bg {
   background-color: $red-muted;
   color: $off-white; 
@@ -366,6 +371,7 @@ Styling Utilities //////////////////////////////////////////////////////////////
     }
   }
 }
+
 .dark-gray-bg {
   background-color: $gray;
   color: $off-white;
@@ -763,8 +769,8 @@ Header ///////////////////////////////////////////////////////////////////////
   background-size: cover;
   color: $off-white;
 }
-.cultural-immersion-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.15)),url("/assets/images/header_image.png");
+.disclaimer-hero {
+  background-color: $gray;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

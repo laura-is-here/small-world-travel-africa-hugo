@@ -76,4 +76,13 @@
         </div>
     </div>
 </header>
+{{ else if eq .Title "Disclaimer" }}
+<header class="disclaimer-hero   wave-background">
+    {{ partial "navigation.html" . }}
+    <div class="flex-container-center     margin-bottom-spacer">
+        <h1>
+            Disclaimer
+        </h1>
+    </div>
+</header>
 {{ end }}
