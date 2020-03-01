@@ -57,7 +57,7 @@ function lazyLoad() {
   var targets = document.querySelectorAll(".lazy-load");
   var intersectionObserverOptions = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "200px",
     threshold: 0.1
   };
 
