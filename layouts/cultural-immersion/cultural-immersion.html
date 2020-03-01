@@ -1,215 +1,341 @@
 {{ define "main" }}
 <section id="about" class="card    dark-red-bg    stack">
-    <div class="container   measure--lg   margin-bottom-spacer">
-        {{ with .Site.GetPage "/total-sensitivity-intro.md" }}{{ .Content }}{{ end }}
-    </div>
+  <div class="container   measure--lg   margin-bottom-spacer">
+    {{ with .Site.GetPage "/total-sensitivity-intro.md" }}{{ .Content }}{{ end }}
+  </div>
 </section>
 <article class="container   stack   margin-top-spacer">
-    <div class="grid-container">
-        <div class=""> 
-            {{ with .Site.GetPage "/total-sensitivity-about.md" }}{{ .Content }}{{ end }}
+  <div class="grid-container">
+    <div class="">
+      {{ with .Site.GetPage "/total-sensitivity-about.md" }}{{ .Content }}{{ end }}
+    </div>
+    <div class="">
+      <div class="gallery">
+        <figure class="gallery-item gallery-item-1">
+          <img
+            data-src="/assets/images/total_sensitivity_group.jpg"
+            class="gallery-image lazy-load"
+            alt="A group of teenagers posing in front of a fenced exhibit at a zoo."
+            width="300px"
+          />
+        </figure>
+        <figure class="gallery-item gallery-item-2">
+          <img
+            data-src="/assets/images/group_with_guitar.jpg"
+            class="gallery-image lazy-load"
+            alt="A group of people gathered around a person playing the guitar"
+            width="300px"
+          />
+        </figure>
+        <figure class="gallery-item gallery-item-3">
+          <img
+            data-src="/assets/images/girls_outside_embrace.jpg"
+            class="gallery-image lazy-load"
+            alt="Two teenage girls posing for a photo with their arms around one another's shoulders"
+            width="300px"
+          />
+        </figure>
+        <figure class="gallery-item gallery-item-4">
+          <img
+            data-src="/assets/images/IMG_1375.jpg"
+            class="gallery-image lazy-load"
+            alt="A group of teens poses outside with their hosts at Total Sensitivity"
+            width="300px"
+          />
+        </figure>
+        <figure class="gallery-item gallery-item-5">
+          <img
+            data-src="/assets/images/group_outside.jpg"
+            class="gallery-image lazy-load"
+            alt="A large group of teenagers since facing one another outside"
+            width="300px"
+          />
+        </figure>
+        <figure class="gallery-item gallery-item-6">
+          <img
+            data-src="/assets/images/group_outside_hiking_2.jpg"
+            class="gallery-image lazy-load"
+            alt="A group of teenagers posing for a photo outside on a hike"
+            width="300px"
+          />
+        </figure>
+      </div>
+    </div>
+  </div>
+</article>
+<section id="booking" class="final-card   stack">
+  <div class="container    margin-bottom-spacer   measure--md">
+    <h1>Book your stay now</h1>
+    <p>
+      For Airbnb accomodations <strong>only</strong>,
+      <a href="https://www.airbnb.com/rooms/34011719"
+        >please book through Airbnb</a
+      >.
+    </p>
+    <p>
+      For Airbnb accomodations plus meals and/or transport services, fill out
+      the form below.
+    </p>
+    <small>* indicates required field</small>
+    <form action="https://formspree.io/mayyzndy" method="POST">
+      <fieldset class="">
+        <legend>Contact Information</legend>
+        <div class="form-row">
+          <label for="name">Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
         </div>
-        <div class="">
-            <div class="gallery">
-                <figure class="gallery-item gallery-item-1">
-                    <img src="/assets/images/total_sensitivity_group.jpg" class="gallery-image" alt="A group of teenagers posing in front of a fenced exhibit at a zoo." width="300px">
-                </figure>
-                <figure class="gallery-item gallery-item-2">
-                    <img src="/assets/images/group_with_guitar.jpg" class="gallery-image" alt="A group of people gathered around a person playing the guitar" width="300px">
-                </figure>
-                <figure class="gallery-item gallery-item-3">
-                    <img src="/assets/images/girls_outside_embrace.jpg" class="gallery-image" alt="Two teenage girls posing for a photo with their arms around one another's shoulders" width="300px">
-                </figure>
-                <figure class="gallery-item gallery-item-4">
-                    <img src="/assets/images/IMG_1375.jpg" class="gallery-image" alt="A group of teens poses outside with their hosts at Total Sensitivity" width="300px">
-                </figure>
-                <figure class="gallery-item gallery-item-5">
-                    <img src="/assets/images/group_outside.jpg" class="gallery-image" alt="A large group of teenagers since facing one another outside" width="300px">
-                </figure>
-                <figure class="gallery-item gallery-item-6">
-                    <img src="/assets/images/group_outside_hiking_2.jpg" class="gallery-image" alt="A group of teenagers posing for a photo outside on a hike" width="300px">
-                </figure>
-            </div>
+        <div class="form-row">
+          <label for="phone">Phone Number *</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your phone number"
+            required
+          />
         </div>
-    </article>
-    <section id="booking" class="final-card   stack">
-        <div class="container    margin-bottom-spacer   measure--md">
-            <h1>Book your stay now</h1>
-            <p>For Airbnb accomodations <strong>only</strong>, <a href="https://www.airbnb.com/rooms/34011719">please book through Airbnb</a>.</p>
-            <p>For Airbnb accomodations plus meals and/or transport services, fill out the form below.</p>
-            <small>* indicates required field</small>
-            <form action="https://formspree.io/mayyzndy" method="POST">
-                <fieldset class="">
-                    <legend>Contact Information</legend>
-                    <div class="form-row">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>When will you be staying with us?</legend>
-                    <div class="form-row">
-                        <label for="arrival">Arrival date *</label>
-                        <input type="date" id="arrival" name="arrival" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="departure">Departure date *</label>
-                        <input type="date" id="departure" name="departure" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="guests">How many guests? *</label>
-                        <input type="number" id="guests" name="guests" required min="1" max="12">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Will you want us to provide...</legend>
-                    <div class="form-row">
-                        <input type="checkbox" id="breakfast" name="breakfast">
-                        <label for="breakfast">Breakfast</label>
-                    </div>
-                    <div class="form-row">
-                        <input type="checkbox" id="lunch" name="lunch">
-                        <label for="lunch">Lunch</label>
-                    </div>
-                    <div class="form-row">
-                        <input type="checkbox" id="Dinner" name="Dinner">
-                        <label for="dinner">Dinner</label>
-                    </div>
-                    <small>
-                        <em>
-                        Snacks and non-alcoholic beverages including safe drinking water are provided throughout the day at no extra charge.
-                        </em>
-                    </small>
-                </fieldset>
-                <fieldset>
-                    <legend>Will you need any of the following transportation services? <small>(check all that apply)</small></legend>
-                    <div class="form-row">
-                        <input type="checkbox" id="airport" name="airport">
-                        <label for="airport">Airport Pickup and Dropoff Only</label>
-                    </div>
-                    <div class="form-row">
-                        <input type="checkbox" id="travel-zimbabwe" name="travel-zimbabwe">
-                        <label for="travel-zimbabwe">Travel within Zimbabwe</label>
-                    </div>
-                    <div class="form-row">
-                        <input type="checkbox" id="travel-other" name="travel-other">
-                        <label for="travel-other">Travel to neighboring countries</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>About your group</legend>
-                    <p>
-                        Every Total Sensitivity program is planned together with you so it will meet your group's unique needs. Every program will involve interaction with Zimbabweans who share your interests.
-                    </p>
-                    <p>
-                        To help us create a proposal for your consideration, please answer the following questions.
-                    </p>
-                    <fieldset>
-                        <legend>Roughly how many members of your group fall into each age category below?</legend>
-                        <div class="form-row">
-                            <label for="ages_0-5">0 - 5 years old *</label>
-                            <input type="number" id="ages_0-5" name="ages_0-5" required min="0" max="12"> 
-                        </div>
-                        <div class="form-row">
-                            <label for="ages_6-12">6 - 12 years old *</label>
-                            <input type="number" id="ages_6-12" name="ages_6-12" required min="0" max="12"> 
-                        </div>
-                        <div class="form-row">
-                            <label for="ages_13-18">13 - 18 years old *</label>
-                            <input type="number" id="ages_13-18" name="ages_13-18" required min="0" max="12"> 
-                        </div>
-                        <div class="form-row">
-                            <label for="ages_19-21">19 - 21 years old *</label>
-                            <input type="number" id="ages_19-21" name="ages_19-21" required min="0" max="12"> 
-                        </div>
-                        <div class="form-row">
-                            <label for="ages_21-up">Adults over 21 *</label>
-                            <input type="number" id="ages_21-up" name="ages_21-up" required min="0" max="12"> 
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Please indicate your level of interest in each of the following.</legend>
-                        <div class="form-row">
-                            <label for="monuments">Ancient Monuments</label>
-                            <select name="monuments" id="monuments">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="arts">Music and the arts</label>
-                            <select name="arts" id="arts">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="nature">Nature, wildlife, and the environment</label>
-                            <select name="nature" id="nature">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="gender">Gender justice</label>
-                            <select name="gender" id="gender">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="politics">Political and economic justice</label>
-                            <select name="politics" id="politics">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="religion">Religion</label>
-                            <select name="religion" id="religion">
-                                <option value="not interested">Not interested</option>
-                                <option value="somewhat interested">Somewhat interested</option>
-                                <option value="very interested">Very interested</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Should your program be designed around the specific educational needs of:</legend>
-                        <div class="form-row">
-                            <input type="checkbox" id="high school" name="high school">
-                            <label for="high school">High school students</label>
-                        </div>
-                        <div class="form-row">
-                            <input type="checkbox" id="college" name="college">
-                            <label for="college">College students</label>
-                        </div>
-                        <div class="form-row">
-                            <input type="checkbox" id="homeschoolers" name="homeschoolers">
-                            <label for="homeschoolers">Homeschoolers and worldschoolers</label>
-                        </div>
-                    </fieldset>
-                </fieldset>
-                <fieldset>
-                    <legend>Please use this space to tell us more about your group and your interests. Click the "Submit" button when you are finished.</legend>
-                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
-                    <input class="button-muted" type="submit" value="Submit">
-                </fieldset>
-            </form>
-            <p>For additional information, email <a href="mailto:myjourney@smallworldtravelafrica.org">myjourney@smallworldtravelafrica.org</a><br>
-            or call our US representative, Steve Askin, at 562-631-2424</p>
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
         </div>
-    </section>
-    {{ end }}
+      </fieldset>
+      <fieldset>
+        <legend>When will you be staying with us?</legend>
+        <div class="form-row">
+          <label for="arrival">Arrival date *</label>
+          <input type="date" id="arrival" name="arrival" required />
+        </div>
+        <div class="form-row">
+          <label for="departure">Departure date *</label>
+          <input type="date" id="departure" name="departure" required />
+        </div>
+        <div class="form-row">
+          <label for="guests">How many guests? *</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            required
+            min="1"
+            max="12"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Will you want us to provide...</legend>
+        <div class="form-row">
+          <input type="checkbox" id="breakfast" name="breakfast" />
+          <label for="breakfast">Breakfast</label>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" id="lunch" name="lunch" />
+          <label for="lunch">Lunch</label>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" id="Dinner" name="Dinner" />
+          <label for="dinner">Dinner</label>
+        </div>
+        <small>
+          <em>
+            Snacks and non-alcoholic beverages including safe drinking water are
+            provided throughout the day at no extra charge.
+          </em>
+        </small>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Will you need any of the following transportation services?
+          <small>(check all that apply)</small>
+        </legend>
+        <div class="form-row">
+          <input type="checkbox" id="airport" name="airport" />
+          <label for="airport">Airport Pickup and Dropoff Only</label>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" id="travel-zimbabwe" name="travel-zimbabwe" />
+          <label for="travel-zimbabwe">Travel within Zimbabwe</label>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" id="travel-other" name="travel-other" />
+          <label for="travel-other">Travel to neighboring countries</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>About your group</legend>
+        <p>
+          Every Total Sensitivity program is planned together with you so it
+          will meet your group's unique needs. Every program will involve
+          interaction with Zimbabweans who share your interests.
+        </p>
+        <p>
+          To help us create a proposal for your consideration, please answer the
+          following questions.
+        </p>
+        <fieldset>
+          <legend>
+            Roughly how many members of your group fall into each age category
+            below?
+          </legend>
+          <div class="form-row">
+            <label for="ages_0-5">0 - 5 years old *</label>
+            <input
+              type="number"
+              id="ages_0-5"
+              name="ages_0-5"
+              required
+              min="0"
+              max="12"
+            />
+          </div>
+          <div class="form-row">
+            <label for="ages_6-12">6 - 12 years old *</label>
+            <input
+              type="number"
+              id="ages_6-12"
+              name="ages_6-12"
+              required
+              min="0"
+              max="12"
+            />
+          </div>
+          <div class="form-row">
+            <label for="ages_13-18">13 - 18 years old *</label>
+            <input
+              type="number"
+              id="ages_13-18"
+              name="ages_13-18"
+              required
+              min="0"
+              max="12"
+            />
+          </div>
+          <div class="form-row">
+            <label for="ages_19-21">19 - 21 years old *</label>
+            <input
+              type="number"
+              id="ages_19-21"
+              name="ages_19-21"
+              required
+              min="0"
+              max="12"
+            />
+          </div>
+          <div class="form-row">
+            <label for="ages_21-up">Adults over 21 *</label>
+            <input
+              type="number"
+              id="ages_21-up"
+              name="ages_21-up"
+              required
+              min="0"
+              max="12"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Please indicate your level of interest in each of the following.
+          </legend>
+          <div class="form-row">
+            <label for="monuments">Ancient Monuments</label>
+            <select name="monuments" id="monuments">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="arts">Music and the arts</label>
+            <select name="arts" id="arts">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="nature">Nature, wildlife, and the environment</label>
+            <select name="nature" id="nature">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="gender">Gender justice</label>
+            <select name="gender" id="gender">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="politics">Political and economic justice</label>
+            <select name="politics" id="politics">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="religion">Religion</label>
+            <select name="religion" id="religion">
+              <option value="not interested">Not interested</option>
+              <option value="somewhat interested">Somewhat interested</option>
+              <option value="very interested">Very interested</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Should your program be designed around the specific educational
+            needs of:
+          </legend>
+          <div class="form-row">
+            <input type="checkbox" id="high school" name="high school" />
+            <label for="high school">High school students</label>
+          </div>
+          <div class="form-row">
+            <input type="checkbox" id="college" name="college" />
+            <label for="college">College students</label>
+          </div>
+          <div class="form-row">
+            <input type="checkbox" id="homeschoolers" name="homeschoolers" />
+            <label for="homeschoolers">Homeschoolers and worldschoolers</label>
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Please use this space to tell us more about your group and your
+          interests. Click the "Submit" button when you are finished.
+        </legend>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Write your message here"
+        ></textarea>
+        <input class="button-muted" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <p>
+      For additional information, email
+      <a href="mailto:myjourney@smallworldtravelafrica.org"
+        >myjourney@smallworldtravelafrica.org</a
+      ><br />
+      or call our US representative, Steve Askin, at 562-631-2424
+    </p>
+  </div>
+</section>
+{{ end }}

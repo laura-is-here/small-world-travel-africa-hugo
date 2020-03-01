@@ -1,0 +1,7 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+http://smallworldtravelafrica.com/* https://smallworldtravelafrica.org/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://modest-wing-ffc5fa.netlify.com/* https://smallworldtravelafrica.org/:splat 301!

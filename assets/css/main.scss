@@ -8,43 +8,43 @@ Globals ///////////////////////////////////////////////////////////////////////
 
 :root {
   // Zimbabwe flag colors
-  
+
   // Green
-  
+
   /*	
   HTML code:	#006401
   RGB code:	R: 0 G: 100 B: 1
   HSV:	120.6° 100% 39.22%
   */
-  
+
   // Yellow
-  
+
   /*
   HTML code:	#FFD102
   RGB code:	R: 255 G: 209 B: 2
   HSV:	49.09° 99.22% 100%
   */
-  
+
   // Red
-  
+
   /*
   HTML code:	#D40000
   RGB code:	R: 212 G: 0 B: 0
   HSV:	0° 100% 83.14%
   */
-  
+
   --green: #006401; // Green
   --green-muted: #005801; // Dark Green
-  --green-bright: #408B41; // Bright Green
-  --red: #D40000;
-  --red-muted: #9F0000;
+  --green-bright: #408b41; // Bright Green
+  --red: #d40000;
+  --red-muted: #9f0000;
   --red-darker: #850000;
-  --red-bright: rgba(223,64,64,1);
-  --red-brighter: #FADFDF;
-  --red-bright-transparent: rgb(223,64,64);
-  --yellow: #FFD102;
-  --yellow-muted: #BF9D02;
-  --yellow-bright: #FFDD41;
+  --red-bright: rgba(223, 64, 64, 1);
+  --red-brighter: #fadfdf;
+  --red-bright-transparent: rgb(223, 64, 64);
+  --yellow: #ffd102;
+  --yellow-muted: #bf9d02;
+  --yellow-bright: #ffdd41;
   --off-white: #ecf0f1;
   --off-white-transparent: #ecf0f1cc;
   --dark: #252525;
@@ -52,7 +52,6 @@ Globals ///////////////////////////////////////////////////////////////////////
   --gray: #555555;
   --gray-light: #c5c5c5;
   --body-font-family: Oxygen, "Fira Sans", "Open Sans", sans-serif;
-  
 }
 * {
   box-sizing: border-box;
@@ -70,34 +69,45 @@ body {
   font-size: $base-font-size;
   font-weight: 400;
   line-height: $base-line-height;
-  color: #252525; 
+  color: #252525;
   background-color: #ecf0f1;
-  
+
   box-sizing: border-box;
-  
+
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  
+
   @media #{$mq-medium} {
-    font-size: $base-font-size*1.2;
-    line-height: $base-line-height*1.2;
+    font-size: $base-font-size * 1.2;
+    line-height: $base-line-height * 1.2;
   }
-  
+
   @media #{$mq-large} {
-    font-size: $base-font-size*1.2;
+    font-size: $base-font-size * 1.2;
   }
-  
+
   @media #{$mq-xlarge} {
-    font-size: $base-font-size*1.3;
+    font-size: $base-font-size * 1.3;
   }
-  
+
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size*1.6;
+    font-size: $base-font-size * 1.6;
   }
 }
 main {
   flex: 1 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-load {
+  width: 100%;
+  height: 300px;
+  background-color: var(--gray);
 }
 
 blockquote {
@@ -123,7 +133,7 @@ hr {
   max-width: 80ch;
 }
 
-.measure--md{
+.measure--md {
   max-width: 60ch;
 }
 
@@ -131,7 +141,12 @@ hr {
   max-width: 40ch;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Muli, "Work Sans", sans-serif;
   line-height: $header-line-height;
   margin-bottom: 1.5rem;
@@ -157,7 +172,7 @@ fieldset {
   border-top: 2px solid $green-bright;
   padding: 0.25rem;
   margin: 1.5rem auto;
-  
+
   @media #{$mq-medium} {
   }
 }
@@ -169,7 +184,7 @@ fieldset > fieldset {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  
+
   @media #{$mq-medium} {
     flex-flow: row nowrap;
   }
@@ -200,34 +215,32 @@ select {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 1px 1px 4px $gray;
-  
+
   @media #{$mq-medium} {
     margin: 0 0 0 0.75rem;
   }
-  
-  &[type=text] {
-    
+
+  &[type="text"] {
     @media #{$mq-medium} {
     }
   }
-  
-  &[type=submit] {
+
+  &[type="submit"] {
     color: $dark;
     width: 40%;
   }
-  
-  &[type=checkbox] {
+
+  &[type="checkbox"] {
     width: 1rem;
     height: 1rem;
     box-shadow: none;
     margin: 0.5rem;
     padding: 0;
   }
-  
 }
 textarea {
   width: 80%;
-  height: 6rem; 
+  height: 6rem;
   background-color: $off-white;
   margin: 0 0.75rem 0.75rem 0.75rem;
   padding: 0.5rem;
@@ -271,7 +284,7 @@ a {
   &:hover {
     color: $off-white;
     background-color: $dark;
-    border-bottom: 5px solid $off-white; 
+    border-bottom: 5px solid $off-white;
   }
 }
 .button {
@@ -285,13 +298,12 @@ a {
     color: $off-white;
     border-radius: 5px;
   }
-  
+
   &:hover,
   &:active,
   &:focus {
     background-color: $red;
   }
-  
 }
 .button-muted {
   &:link,
@@ -304,13 +316,12 @@ a {
     color: $dark;
     border-radius: 5px;
   }
-  
+
   &:hover,
   &:active,
   &:focus {
     background-color: $green-bright;
   }
-  
 }
 
 /*-----------------------------------------------------------------------------
@@ -318,12 +329,14 @@ Styling Utilities //////////////////////////////////////////////////////////////
 ----------------------------------------------------------------------------*/
 
 .shadow--sm {
-  box-shadow: 
-    1px 3px 7px hsla(180, 5%, 15%, 5%);
+  box-shadow: 1px 3px 7px hsla(180, 5%, 15%, 5%);
   border-radius: 10px;
 }
 
 .thumb {
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-left: 0.25rem;
 }
@@ -338,9 +351,12 @@ Styling Utilities //////////////////////////////////////////////////////////////
 }
 
 .main-background-grad {
-  background: 
-  linear-gradient(55deg, rgb(197,197,197) 35%, rgba(0,0,0,0) 35%),
-  linear-gradient(-25deg, rgba(0,0,0,0) 90%, rgb(197,197,197) 90%);
+  background: linear-gradient(
+      55deg,
+      rgb(197, 197, 197) 35%,
+      rgba(0, 0, 0, 0) 35%
+    ),
+    linear-gradient(-25deg, rgba(0, 0, 0, 0) 90%, rgb(197, 197, 197) 90%);
 }
 
 .wave-background {
@@ -355,8 +371,8 @@ Styling Utilities //////////////////////////////////////////////////////////////
 
 .dark-red-bg {
   background-color: $red-muted;
-  color: $off-white; 
-  
+  color: $off-white;
+
   a {
     &:link,
     &:visited {
@@ -375,7 +391,7 @@ Styling Utilities //////////////////////////////////////////////////////////////
 .dark-gray-bg {
   background-color: $gray;
   color: $off-white;
-  
+
   a {
     &:link,
     &:visited {
@@ -397,77 +413,75 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
 
 .container {
   margin: 0 4%;
-  
+
   @media #{$mq-medium} {
     margin: 0 8%;
   }
-  
+
   @media #{$mq-large} {
     margin: 0 14%;
   }
-  
+
   @media #{$mq-xlarge} {
     margin: 0 20%;
   }
 }
 .container-narrow {
   margin: 0 4%;
-  
+
   @media #{$mq-medium} {
     margin: 0 18%;
   }
-  
+
   @media #{$mq-large} {
     margin: 0 24%;
   }
-  
+
   @media #{$mq-xlarge} {
     margin: 0 24%;
   }
 }
 .container-inner {
   margin: 0 4%;
-  
+
   @media #{$mq-large} {
     margin: 0 7%;
   }
-  
+
   @media #{$mq-xlarge} {
     margin: 0 10%;
   }
-  
 }
 .container-inner-sm {
   margin: 0;
-  
+
   @media #{$mq-medium} {
     margin: 0 2%;
   }
-  
+
   @media #{$mq-large} {
     margin: 0 3%;
   }
-  
+
   @media #{$mq-xlarge} {
     margin: 0 5%;
   }
-  
 }
 .flex-container {
   display: flex;
   flex-flow: column nowrap;
   margin: 0 4%;
   align-content: space-around;
-  
+
   @media #{$mq-medium} {
     flex-flow: row nowrap;
     margin: 0 6%;
   }
-  
+
   @media #{$mq-large} {
     margin: 0 9%;
   }
-  
+
   @media #{$mq-xlarge} {
     margin: 0 12%;
   }
@@ -479,13 +493,13 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  
+
   @media #{$mq-medium} {
   }
-  
+
   @media #{$mq-large} {
   }
-  
+
   @media #{$mq-xlarge} {
   }
 }
@@ -493,26 +507,26 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   display: grid;
   grid-template-columns: 1fr;
   justify-content: space-around;
-  
+
   @media #{$mq-medium} {
     grid-template-columns: 1fr 1fr;
-    
+
     & > div:nth-child(1) {
-      grid-area: 1 / 1 / 1 / 2; 
+      grid-area: 1 / 1 / 1 / 2;
     }
-    
+
     & > div:nth-child(2) {
       grid-area: 1 / 2 / 1 / 3;
     }
   }
-  
+
   @media #{$mq-large} {
     grid-template-columns: 1fr 1fr;
-    
+
     & > div:nth-child(1) {
-      grid-area: 1 / 1 / 1 / 2; 
+      grid-area: 1 / 1 / 1 / 2;
     }
-    
+
     & > div:nth-child(2) {
       grid-area: 1 / 2 / 1 / 3;
     }
@@ -526,7 +540,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   justify-content: space-around;
   margin: 1.5rem auto;
   text-align: center;
-  
+
   & > * {
     display: flex;
     flex-flow: column nowrap;
@@ -534,7 +548,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
     align-items: center;
     margin: 0 auto;
   }
-  
+
   @media #{$mq-medium} {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -542,11 +556,11 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
 }
 .card {
   box-shadow: 2px 4px 7px $dark;
-  
+
   &:nth-child(1) {
     margin-top: 0;
   }
-  
+
   @media #{$mq-medium} {
   }
 }
@@ -565,7 +579,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   background-color: $gray;
   margin-top: 3rem;
   color: $off-white;
-  
+
   a {
     &:link,
     &:visited {
@@ -590,8 +604,8 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 /* Modal Content (Image) */
 .modal-content {
@@ -612,13 +626,18 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   height: 150px;
 }
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 /* The Close Button */
 .close {
@@ -637,7 +656,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   cursor: pointer;
 }
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
@@ -654,7 +673,6 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
 
   @media #{$mq-small} {
     margin: 0.75rem 3rem;
-
   }
 }
 
@@ -669,7 +687,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  
+
   &:hover {
     opacity: 0.9;
   }
@@ -698,12 +716,26 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
 .stack > * {
   margin-top: 0;
   margin-bottom: 0;
-} 
+}
 
 .stack * + * {
   margin-top: $space-small;
-  
-  label, input, select, li, rem, svg, img, figcaption, h1, h2, h3, h4, h5, h6, p {
+
+  label,
+  input,
+  select,
+  li,
+  rem,
+  svg,
+  img,
+  figcaption,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     margin-top: 0.75rem;
   }
 }
@@ -724,7 +756,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   margin-bottom: -3rem;
   position: relative;
   z-index: 2;
-  
+
   @media #{$mq-small} {
     margin-bottom: -6rem;
   }
@@ -733,7 +765,7 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   position: relative;
   margin-top: -3rem;
   z-index: 2;
-  
+
   @media #{$mq-small} {
     margin-top: -6rem;
   }
@@ -743,18 +775,17 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
 Containers and cards 
 --*/
 
-
-
-
-
 /*-----------------------------------------------------------------------------
 Header ///////////////////////////////////////////////////////////////////////
 ----------------------------------------------------------------------------*/
 
 .main-hero {
   background-color: $dark;
-  background-image: 
-    linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.05)),
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.05)
+    ),
     url("/assets/images/header_image.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -763,7 +794,8 @@ Header ///////////////////////////////////////////////////////////////////////
   min-height: 70vh;
 }
 .regional-tours-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.15)),url("/assets/images/");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),
+    url("/assets/images/");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -787,19 +819,19 @@ nav {
   transition: 0.3s ease-in-out;
   z-index: 10;
   padding: 0.75rem;
-  
+
   .active {
     border-bottom: 2px solid $dark;
   }
-  
+
   button {
     display: none;
   }
-  
+
   div {
     padding: 0;
   }
-  
+
   @media #{$mq-medium} {
     display: flex;
     flex-flow: row nowrap;
@@ -836,17 +868,17 @@ nav {
   background-color: transparent;
   cursor: pointer;
   color: $off-white;
-  
+
   &:hover,
   &:active,
   &:focus {
     color: $green-bright;
   }
-  
+
   span {
     display: block;
   }
-  
+
   @media #{$mq-small} {
     display: none;
   }
@@ -856,7 +888,7 @@ nav {
   display: none;
   transition: 0.5s ease-in-out;
   padding: 0 0.75rem;
-  
+
   @media #{$mq-small} {
     display: block;
     background-color: transparent;
@@ -871,12 +903,11 @@ nav {
 .nav-links {
   list-style: none;
   padding: 0;
-  
+
   @media #{$mq-small} {
     display: flex;
     flex-flow: row nowrap;
   }
-  
 }
 
 .nav-link:link,
@@ -886,11 +917,11 @@ nav {
   display: block;
   padding: 0.25rem;
   border-bottom: 2px solid $off-white;
-  
+
   @media #{$mq-small} {
     padding: 0.25rem 0.75rem;
   }
-  
+
   &:hover,
   &:active,
   &:focus {
@@ -902,7 +933,7 @@ nav {
   display: none;
 }
 .js .show {
-  display: block
+  display: block;
 }
 /*
 .shrink {
@@ -930,18 +961,18 @@ footer {
   background-color: $gray-light;
   text-align: center;
   color: $dark;
-  
+
   div {
     margin: 0 auto;
   }
-  
+
   a {
     &:link {
       color: $green-bright;
       transition: 0.4s ease-in-out;
       text-decoration: none;
     }
-    
+
     &:visited {
       color: $gray;
       opacity: 0.9;
