@@ -323,7 +323,7 @@ Styling Utilities //////////////////////////////////////////////////////////////
 ----------------------------------------------------------------------------*/
 
 .shadow--sm {
-  box-shadow: 1px 3px 7px hsla(180, 5%, 15%, 5%);
+  box-shadow: 1px 3px 7px rgba(54, 97, 97, 0.05);
   border-radius: 10px;
 }
 
@@ -350,7 +350,7 @@ Styling Utilities //////////////////////////////////////////////////////////////
       rgb(197, 197, 197) 35%,
       rgba(0, 0, 0, 0) 35%
     ),
-    linear-gradient(-25deg, rgba(0, 0, 0, 0) 90%, rgb(197, 197, 197) 90%);
+    linear-gradient(-25deg, rgba(0, 0, 0, 0) 90%, rgb(197, 197, 197) 0.9);
 }
 
 .wave-background {
@@ -720,7 +720,6 @@ Spacing and Positioning Utilities //////////////////////////////////////////////
   input,
   select,
   li,
-  rem,
   svg,
   img,
   figcaption,

@@ -25,9 +25,8 @@ title = "Small World Travel Africa"
 
 [params]
   dateFormat = "Jan 2, 2006"
-  favicon = "/assets/images/anarchy_symbol.png"
-  description = "We are a group of anarchists organizing to promote the spread of anarchist ideas & action in the greater Long Beach Area."
-  images = ["/assets/images/logo.png", "/assets/images/iceoutoflb-banner.jpg", "/assets/images/a-backdrop.png"]
+  description = "Book an educational journey to southern Africa. We offer the chance to connect with everyday people in southern Africa providing cultural exchange and regional touring experiences."
+  images = ["/assets/images/header_image.jpg"]
 
 [blackfriday]
   hrefTargetBlank = true
