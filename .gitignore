@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff297c968ea0c9579f32a9c56bbddf893d1b0f44bebf85d2d970f5455b95a476
-size 53
+public/
+<<<<<<< HEAD
+node_modules/
+=======
+node_modules/
+>>>>>>> parent of 33e6298... Add video

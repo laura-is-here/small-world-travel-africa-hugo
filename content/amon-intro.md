@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abce3dc770f8b6d2ef5420919fa4b37d6850ba935a946453cbba3fd217e3e922
-size 461
+# The Places <span class="border-bottom">You'll Go</span>
+
+Enjoy enriching, educational experiences across the southern portion of the world's largest continent. You will explore the region's beautiful landscapes, magnificent wildlife and its historic struggles on the difficult path to freedom. You may visit the ancient kingdom of Great Zimbabwe, Victoria Falls, Robben Island Prison, Kruger National Park, Cape Town &mdash; "The Mother City", and much more! 
