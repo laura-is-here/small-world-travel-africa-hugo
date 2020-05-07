@@ -1,33 +1,3 @@
-baseURL = "https://smallworldtravelafrica.org/"
-languageCode = "en-us"
-title = "Small World Travel Africa"
-
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Regional Tours"
-    url = "/regional-tours/"
-    weight = 2
-  [[menu.main]]
-    name = "Cultural Immersion"
-    url = "/cultural-immersion/"
-    weight = 3
-  [[menu.main]]
-    name = "Contact"
-    url = "#contact"
-    weight = 4
-
-[taxonomies]
-  tag = "tags"
-
-[params]
-  dateFormat = "Jan 2, 2006"
-  description = "Book an educational journey to southern Africa. We offer the chance to connect with everyday people in southern Africa providing cultural exchange and regional touring experiences."
-  images = ["/assets/images/header_image.jpg"]
-
-[blackfriday]
-  hrefTargetBlank = true
-  noreferrerLinks = true
+version https://git-lfs.github.com/spec/v1
+oid sha256:e74ff2174da6548cd4ff5d001deca0f24b4542c6a301f84a467c64ac6b412362
+size 813

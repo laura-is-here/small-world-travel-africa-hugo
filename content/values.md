@@ -1,9 +1,3 @@
-# Our Values
-
-## Progressive values, progressive partners
-
-Our partners are long-time activists with a passion for developing their communities and relationships with internationals.
-
-## More than just a vacation
-                
-When we say "life-changing," we mean it. A tour or stay with one of our partners is more than a vacation&mdash;it is a learning experience that will provide unique insight and perspective on southern African culture, and, of course, support individuals with proven track records of community development. 
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb64625df7141b58c55360b6daf4d16d5647afa2ad7c203a0fb0055728bfd84a
+size 535

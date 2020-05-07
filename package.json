@@ -1,24 +1,3 @@
-{
-  "name": "small-world-travel-africa-hugo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "postcss.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/laura-is-here/small-world-travel-africa-hugo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/laura-is-here/small-world-travel-africa-hugo/issues"
-  },
-  "homepage": "https://github.com/laura-is-here/small-world-travel-africa-hugo#readme",
-  "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "postcss-cli": "^7.1.0"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7338567fea95e5a6cbab4587c44617d9c20ad6e3c1f481c210ee6bebe2cc7860
+size 655
