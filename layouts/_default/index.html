@@ -1,68 +1,63 @@
 {{ define "main" }}
 <section id="about" class="card    dark-red-bg   stack">
-  <div class="container   measure--lg   margin-bottom-spacer">
-    {{with .Site.GetPage "/about.md" }}{{ .Content }}{{ end }}
-  </div>
+	<div class="container   measure--lg   margin-bottom-spacer">
+		{{with .Site.GetPage "/about.md" }}{{ .Content }}{{ end }}
+	</div>
 </section>
 {{ partial "partners.html" . }}
-<section
-  id="travel-with-us"
-  class="card     dark-red-bg    stack    margin-top-spacer"
->
-  <div class="container   measure-lg   margin-bottom-spacer">
-    {{ with .Site.GetPage "/why-travel-with-us.md" }}{{ .Content }}{{ end }}
-  </div>
+<section id="travel-with-us" class="card     dark-red-bg    stack    margin-top-spacer">
+	<div class="container   measure-lg   margin-bottom-spacer">
+		{{ with .Site.GetPage "/why-travel-with-us.md" }}{{ .Content }}{{ end }}
+	</div>
 </section>
 {{ partial "partners-amon.html" . }}
 <section id="values" class="card dark-red-bg stack   margin-top-spacer">
-  <div class="container   measure--lg   margin-bottom-spacer">
-    {{with .Site.GetPage "/values.md" }}{{ .Content }}{{ end }}
-  </div>
+	<div class="container   measure--lg   margin-bottom-spacer">
+		{{with .Site.GetPage "/values.md" }}{{ .Content }}{{ end }}
+	</div>
 </section>
 {{ partial "partners-total.html" . }}
 <section id="booking" class="final-card stack">
-  <div class="container   margin-bottom-spacer   measure--md">
-    <div>
-      <h1>Book your journey or stay now</h1>
-      <p>
-        Every trip is different. Please follow the links below to each of our
-        partners' respective contact forms to get more information about
-        booking.
-      </p>
-    </div>
-    <div>
-      <h2>
-        <a href="/regional-tours/#booking" class="header-link">
-          Start your journey with Amon Tsabola
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </h2>
+	<div class="container   margin-bottom-spacer   measure--md">
+		<div>
+			<h1>Book your journey or stay now</h1>
+			<p>
+				Every trip is different. Please follow the links below to each of our
+				partners' respective contact forms to get more information about
+				booking.
+			</p>
+		</div>
+		<div>
+			<h2>
+				<a href="/regional-tours/#booking" class="header-link">
+					Start your journey with Amon Tsabola
+					<i class="fas fa-arrow-right"></i>
+				</a>
+			</h2>
 
-      <ul>
-        <li>Spend time in over half a dozen countries in southern Africa</li>
-        <li>Rely on a guide who is intimately familiar with the area</li>
-      </ul>
-    </div>
-    <div>
-      <h2>
-        <a href="/cultural-immersion/#booking" class="header-link">
-          Book a stay with <em>Total Sensitivity</em>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </h2>
-      <ul>
-        <li>Enjoy tailor made programs for your group</li>
-        <li>Fully-staffed bed and breakfast with meals prepared for you</li>
-        <li>Experience local attractions and spend time with locals</li>
-      </ul>
-    </div>
-    <p>
-      For additional information, email
-      <a href="mailto:myjourney@smallworldtravelafrica.com"
-        >myjourney@smallworldtravelafrica.com</a
-      ><br />
-      or call our US representative, Steve Askin, at 562-631-2424
-    </p>
-  </div>
+			<ul>
+				<li>Spend time in over half a dozen countries in southern Africa</li>
+				<li>Rely on a guide who is intimately familiar with the area</li>
+			</ul>
+		</div>
+		<div>
+			<h2>
+				<a href="/cultural-immersion/#booking" class="header-link">
+					Book a stay with <em>Total Sensitivity</em>
+					<i class="fas fa-arrow-right"></i>
+				</a>
+			</h2>
+			<ul>
+				<li>Enjoy tailor made programs for your group</li>
+				<li>Fully-staffed bed and breakfast with meals prepared for you</li>
+				<li>Experience local attractions and spend time with locals</li>
+			</ul>
+		</div>
+		<p>
+			For additional information, email
+			<a href="mailto:myjourney@smallworldtravelafrica.com">myjourney@smallworldtravelafrica.com</a><br />
+			or call our US representative, Steve Askin, at 562-631-2424
+		</p>
+	</div>
 </section>
 {{ end }}
