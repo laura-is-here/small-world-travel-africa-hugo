@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2a0e381c149f8a40e51a57343a062b97e640c5bb65e5bdd6fb11bc6e28e5bed
-size 3475
+{{ if eq .Title "Small World Travel Africa" }}
+<header class="main-hero">
+    {{ partial "navigation.html" . }}
+    <div class="container-inner   margin-bottom-spacer">
+        <div class="grid-container">
+            <div class="margin-bottom-spacer">
+                <h1>
+                    Book an educational journey to southern Africa
+                </h1>
+                <h2>Real People. Lifechanging Experiences.</h2>
+                <p>
+                    We offer the chance to connect with everyday people in southern Africa providing cultural exchange and regional touring experiences.
+                </p>
+                <p>
+                    This is your chance to:
+                </p>
+                <ul>
+                    <li>
+                        Deepen your knowledge of southern African cultures
+                    </li>
+                    <li>
+                        Embark on a trip across the region
+                    </li>
+                    <li>
+                        Enjoy a comfortable and safe stay in Africa
+                    </li>
+                </ul>
+                <div>
+                    <a href="#about" class="button-muted   shadow--sm">Find Out More</a>
+                    <a href="#booking" class="button    shadow--sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ else if eq .Title "Regional Tours" }}
+<header class="main-hero">
+    {{ partial "navigation.html" . }}
+    <div class="container-inner    margin-bottom-spacer">
+        <div class="grid-container">
+            <div class="margin-bottom-spacer">
+                <h1>
+                    Start your journey with Amon Tsabola
+                </h1>
+                <p>
+                    Amon Tsabola is as kind as he is resourceful, and he and his 12 seat passenger van are at wait to carry you across southern Africa.
+                </p>
+                <div>
+                    <a href="#about" class="button-muted   shadow--sm">Find Out More</a>
+                    <a href="#booking" class="button    shadow--sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ else if eq .Title "Cultural Immersion" }}
+<header class="main-hero">
+    {{ partial "navigation.html" . }}
+    <div class="container-inner   margin-bottom-spacer">
+        <div class="grid-container">
+            <div class="margin-bottom-spacer">
+                <h1>
+                    Immerse yourself in southern African culture with <em>Total Sensitivity</em>
+                </h1>
+                <p>
+                    Mary & Jonah Gokova are everyday Zimbaweans doing extraordinary things&mdash;don't miss an opportunity to be a guest at their suburban bed and breakfast in Harare.
+                </p>
+                <p>
+                    They can help plan programs designed around your group's specific needs.
+                </p>
+                <div>
+                    <a href="#about" class="button-muted   shadow--sm">Find Out More</a>
+                    <a href="#booking" class="button   shadow--sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ else if eq .Title "Disclaimer" }}
+<header class="disclaimer-hero   wave-background">
+    {{ partial "navigation.html" . }}
+    <div class="flex-container-center     margin-bottom-spacer">
+        <h1>
+            Disclaimer
+        </h1>
+    </div>
+</header>
+{{ end }}

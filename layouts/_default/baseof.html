@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:850b5715cd1d401222a2a9beff60fa2582dcf3c07c2fbf79a5f0d54bc1e4d013
-size 464
+<!DOCTYPE html>
+<htmL lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+        <main class="main-background-grad">
+            {{ block "main" . }}{{ end }}
+        </main>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        {{ partial "footer.html" . }}
+    </body>
+</htmL>

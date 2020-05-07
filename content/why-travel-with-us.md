@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce1daa7c1b8b907ae793ff31745ff9365af262f72ccd7a593efa377a63410c07
-size 407
+# Why Travel with Us?
+- 
+    ## Real Connections 
+    Our partners are everyday Zimbabweans committed to economic development & gender justice 
+
+-   
+    ## Progressive Values
+    We promote progressive values and build relationships with those aiding progressive causes
+- 
+    ## Safety and Comfort
+    Rest assured that our partners have experience dealing with the challenges of travel in southern Africa
